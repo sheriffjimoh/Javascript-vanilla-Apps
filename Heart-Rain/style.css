@@ -1,0 +1,33 @@
+
+*{
+	box-sizing: border-box;
+}
+  #notif-container   a {
+	text-decoration-line: none;
+	color: #fff;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+
+.heart {
+	color: teal;
+	position: fixed;
+	top: 1vh;
+	font-size: 2rem;
+	transform: translateY(0);
+	animation: fall  3s linear;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}

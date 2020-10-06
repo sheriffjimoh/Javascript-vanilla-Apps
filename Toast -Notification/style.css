@@ -1,0 +1,68 @@
+
+*{
+	box-sizing: border-box;
+}
+  #notif-container   a {
+	text-decoration-line: none;
+	color: #fff;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+#notif-container , #notif{
+	display: none;
+}
+
+#notif-container {
+	position: absolute;
+	bottom:20px;
+	right:0px;
+	top: 120px;
+	width: 320px;
+	z-index: 1px;
+	overflow-y: scroll;
+
+
+}
+
+#notif{
+	background-color: teal;
+	color: #fff;
+	padding: 2rem;
+  margin-bottom: 20px;
+  transition:  transform 1.3s ease-in-out;
+}
+#notif img{
+	width: 100%;
+}
+
+
+main {
+	width: 800px;
+	text-align: center;
+}
+
+#notif-container::-webkit-scrollbar {
+  width: 1em;
+  background-color: teal;
+}
+ 
+#notif-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+#notif-container::-webkit-scrollbar-thumb {
+  background-color: #ffff;
+  outline: 1px solid #fff;
+}
+
+#notif-container::-webkit-scrollbar-button{
+	 /*background-color: red;*/
+}
